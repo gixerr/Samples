@@ -4,6 +4,7 @@ namespace ConfigurationSample.Interfaces
     {
          bool ShowGreetings { get; }
          bool ShowMotd { get; }
+         bool ShowAbout { get; }
          bool ShowFooter { get; }
     }
 }

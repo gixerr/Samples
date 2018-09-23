@@ -68,11 +68,19 @@ namespace ConfigurationSample
                 Console.WriteLine(messageOfTheDay.Author);
             }
 
+            if (application.ShowAbout)
+            {
+                var about = new About();
+                Configuration.GetSection("about").Bind(about);
+                Console.WriteLine(about.Content);
+                Console.WriteLine(about.Author);
+            }
+
             if (application.ShowFooter)
             {
                 Console.WriteLine(Configuration["footer:content"]);
             }
-            
+
             app.UseHttpsRedirection();
             app.UseMvc();
         }
