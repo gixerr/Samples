@@ -14,5 +14,7 @@ namespace ConfigurationSample
         public bool ShowGreetings => _settings.ShowGreetings;
 
         public bool ShowMotd => _settings.ShowMotd;
+
+        public bool ShowFooter => _settings.ShowFooter;
     }
 }

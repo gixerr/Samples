@@ -68,8 +68,11 @@ namespace ConfigurationSample
                 Console.WriteLine(messageOfTheDay.Author);
             }
 
-            Console.WriteLine(Configuration["footer:content"]);
-
+            if (application.ShowFooter)
+            {
+                Console.WriteLine(Configuration["footer:content"]);
+            }
+            
             app.UseHttpsRedirection();
             app.UseMvc();
         }
