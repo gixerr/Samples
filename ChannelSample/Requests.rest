@@ -1,0 +1,13 @@
+@baseUrl = http://localhost:5014
+
+###
+GET {{baseUrl}}
+
+###
+POST {{baseUrl}}/videos
+Content-Type: application/json
+
+{
+    "path": "video.mp4",
+    "quality": ""
+}
