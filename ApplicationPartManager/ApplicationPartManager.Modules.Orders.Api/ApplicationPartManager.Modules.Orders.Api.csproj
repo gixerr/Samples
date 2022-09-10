@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ApplicationPartManager.Modules.Orders.Core\ApplicationPartManager.Modules.Orders.Core.csproj" />
+      <ProjectReference Include="..\ApplicationPartManager.Shared\ApplicationPartManager.Shared.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="module.orders.json" />
+      <Content Include="module.orders.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
+</Project>
